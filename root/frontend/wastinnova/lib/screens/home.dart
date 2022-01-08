@@ -43,7 +43,7 @@ class Home extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     NavButton("Stats",'stats',Icons.pie_chart_sharp),
-                    NavButton("Connect",'stats',Icons.bar_chart),
+                    NavButton("Connect",'connect',Icons.connect_without_contact),
                   ],
                 ),
               ],

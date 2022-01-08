@@ -4,3 +4,8 @@ import 'package:flutter/material.dart';
 //                         primary: Colors.white,
 //                         onPrimary: Colors.black,
 //                       );
+const kheaderstyle= TextStyle(
+                    fontSize: 45,
+                    fontWeight:FontWeight.bold,
+                    color: Colors.black87,
+                  );

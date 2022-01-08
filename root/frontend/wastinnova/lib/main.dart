@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wastinnova/screens/connect.dart';
 import 'package:wastinnova/screens/dumpwaste.dart';
 import 'package:wastinnova/screens/home.dart';
 import 'package:wastinnova/screens/statistics.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         'tracking':(context)=>TrackingVan(),
         'stats':(context)=>StatsScreen(),
         'dumpwaste':(connect) =>DumpWaste(),
-        // 'connect':(context)=>TrackingVan(),
+        'connect':(context)=>ConnectScreen(),
         },
     );
   }

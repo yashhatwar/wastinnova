@@ -55,7 +55,7 @@ class _TrackingVanState extends State<TrackingVan> {
                     SizedBox(height: 45,),
                     Text("Current Location"),
                     SizedBox(height: 40,),
-                    Text("End Point"),
+                    Text("Your Location"),
                   ],
                 )
               ],

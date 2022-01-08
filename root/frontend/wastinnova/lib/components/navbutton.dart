@@ -19,11 +19,14 @@ class NavButton extends StatelessWidget {
           Text(data),
         ],
       ),
+      
       style: ElevatedButton.styleFrom(
+        fixedSize:Size.square(110),
         primary: Colors.white,
         onPrimary: Colors.black,
         padding: EdgeInsets.all(15),
-        
+        elevation: 10,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       ),
       );
   }
