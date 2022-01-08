@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:wastinnova/screens/dumpwaste.dart';
 import 'package:wastinnova/screens/home.dart';
+import 'package:wastinnova/screens/statistics.dart';
 import 'package:wastinnova/screens/track.dart';
 
 void main() {
@@ -15,14 +17,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Wastinnova',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        // primarySwatch: Color(0xFF37B943),
+        appBarTheme: AppBarTheme(color:  Color(0xFF37B943)),
       ),
       initialRoute: 'home',
       routes: {
         'home':(context) =>Home(),
         'tracking':(context)=>TrackingVan(),
-        'stats':(context)=>TrackingVan(),
-        'connect':(context)=>TrackingVan(),
+        'stats':(context)=>StatsScreen(),
+        'dumpwaste':(connect) =>DumpWaste(),
+        // 'connect':(context)=>TrackingVan(),
         },
     );
   }

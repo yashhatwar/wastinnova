@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:svg_icon/svg_icon.dart';
+import 'package:wastinnova/components/navbutton.dart';
 
 class Home extends StatelessWidget {
   const Home({ Key? key }) : super(key: key);
@@ -18,9 +19,10 @@ class Home extends StatelessWidget {
             ),),),
           Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Image.asset('assets/useme.png'),
-                Text(
+                const Text(
                   "Home",
                   style: TextStyle(
                     color: Colors.white,
@@ -32,40 +34,16 @@ class Home extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    ElevatedButton(
-                      onPressed: () {}, 
-                      child: Icon(Icons.location_on),
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.white,
-                        onPrimary: Colors.black,
-                        
-                      ),
-                      ),
-                    ElevatedButton(
-                      onPressed: () {}, 
-                    child: SvgIcon('assets/dumpwaste.svg',color: Colors.black,)),
+                    NavButton('Track Van','tracking',Icons.location_on),
+                    NavButton("Dump waste",'dumpwaste',Icons.delete_sweep_sharp),
                   ],
                 ),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    ElevatedButton(
-                      onPressed: () {}, 
-                      child: Icon(Icons.pie_chart_sharp),
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.white,
-                        onPrimary: Colors.black,
-                        
-                      ),),
-                    ElevatedButton(
-                      onPressed: () {}, 
-                      child: Icon(Icons.bar_chart),
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.white,
-                        onPrimary: Colors.black,
-                        
-                      ),),
+                    NavButton("Stats",'stats',Icons.pie_chart_sharp),
+                    NavButton("Connect",'stats',Icons.bar_chart),
                   ],
                 ),
               ],
@@ -76,3 +54,4 @@ class Home extends StatelessWidget {
     );
   }
 }
+
