@@ -1,4 +1,4 @@
-var app   =  require("express"),
+var express   =  require("express"),
     jwt       =  require("jsonwebtoken"),
     User      =  require("../models/user"),
     config    =  require("../config"),
@@ -19,9 +19,7 @@ let mw = require("../mw")
 });*/
 
 router.route("/:username").get(mw.check, function(req, res) {
-    User.findOne({
-        username : req.params.username
-    }, function(err, val) {
+    User.findOne({username : req.params.username}, function(err, val) {
         if(err)
         {
             console.log(err);
@@ -55,7 +53,7 @@ router.route("/login", function(req, res) {
                 if(val.password === req.body.password)
                 {
                     jwt.sign({
-                        username = req.body.username
+                        username : req.body.username
                     }, config.key, {
                         expiresIn : "36h",
                     });

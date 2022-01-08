@@ -4,7 +4,7 @@ var express     =  require("express"),
     bodyParser  =  require("body-parser");
 
 var userRoute    =  require("./routes/user"),
-    profileRoute =  require("./routes/profile"),
+    profileRoute =  require("./routes/profile");
 
 var app = express();
 
