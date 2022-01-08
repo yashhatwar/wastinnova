@@ -20,11 +20,6 @@ app.route("/").get(function(req, res) {
     res.json("Welcome to our App!");
 });
 
-/* app.post("/login", function(req, res) {
-    res.send("This is your Dashboard");
-});
- */
-
 app.listen(PORT, function() {
    console.log("The App is starting at port " + PORT + " ..."); 
 });

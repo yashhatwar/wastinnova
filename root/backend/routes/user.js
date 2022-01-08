@@ -1,4 +1,4 @@
-var express   =  require("express"),
+var app   =  require("express"),
     jwt       =  require("jsonwebtoken"),
     User      =  require("../models/user"),
     config    =  require("../config"),
