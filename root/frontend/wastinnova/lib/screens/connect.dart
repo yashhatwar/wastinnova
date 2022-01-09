@@ -56,24 +56,10 @@ class ConnectScreen extends StatelessWidget {
                         }).toList(),
                     ),
                     
-                        
-                        // ListTile(
-                        //   style: ListTileStyle.drawer,
-                        //   tileColor: Colors.blue,
-                        // leading: Icon(Icons.business),
-                        // title: Text("Comapany name : \nContact : "),
-                        // ),
                       ),
                   ],
                 ),
               ),
-              //   ListView(
-              // //     children: ideaDataList.map((idea) {
-              // //   return ListTile(
-              // //     leading: Icon(Icons.business),
-              // //     title: Text("Comapany name : \nContact : "),
-              // //   );
-              // // }).toList(),
             ),
           ],
         ),
