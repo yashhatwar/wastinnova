@@ -6,7 +6,7 @@ var express   =  require("express"),
 
 let mw = require("../mw")
 
-/* router.route("/register").post(function(req, res) {
+router.route("/register").post(function(req, res) {
 
    var newUser = new User ( {
        username : req.body.username,
@@ -16,7 +16,7 @@ let mw = require("../mw")
    newUser.save();
    
    res.send(newUser); 
-});*/
+});
 
 router.route("/:username").get(mw.check, function(req, res) {
     User.findOne({username : req.params.username}, function(err, val) {
